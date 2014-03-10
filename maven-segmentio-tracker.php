@@ -15,8 +15,10 @@ namespace MavenSegmentIoTracker;
 // Exit if accessed directly 
 if ( ! defined( 'ABSPATH' ) ) exit;
 
-//WE need to load the library
-require_once __DIR__ . '/Analytics.php';
+
+//We need to load the library
+\Maven\Core\Loader::load(__DIR__, '/Analytics.php');
+		
 
 use Maven\Settings\OptionType,
 	Maven\Settings\Option;
